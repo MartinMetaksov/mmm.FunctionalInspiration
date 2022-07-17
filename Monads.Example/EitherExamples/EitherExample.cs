@@ -24,7 +24,7 @@ public static class EitherExample
             left =>
             {
                 Console.WriteLine(left);
-                return Maybe<Speaker>.Factory(null);
+                return new Nothing<Speaker>();
             },
             right => right);
         Console.WriteLine(speaker);
