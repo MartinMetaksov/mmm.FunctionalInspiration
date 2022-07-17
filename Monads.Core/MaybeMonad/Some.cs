@@ -14,7 +14,7 @@ public class Some<T> : IMaybe<T>
     public IMaybe<TNext> Map<TNext>(Func<T, TNext> func)
         => Maybe<TNext>.Factory(func(_value));
         
-    public IMaybe<TU> Bind<TU>(Func<T, IMaybe<TU>> func)
+    public IMaybe<TNext> Bind<TNext>(Func<T, IMaybe<TNext>> func)
         => func(_value);
       
 }

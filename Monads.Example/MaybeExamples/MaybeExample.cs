@@ -9,6 +9,7 @@ public static class MaybeExample
 {
     public static void MaybeComposition() {
         Console.WriteLine("Maybe Composition: ");
+        // var city = Maybe<Speaker>.Factory(new Speaker())
         var city = Maybe<Speaker>.Factory(new Speaker())
             .Bind(speaker => speaker.NextTalk())
             .Bind(talk => talk.GetConference())

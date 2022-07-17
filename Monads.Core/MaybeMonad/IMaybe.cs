@@ -6,5 +6,5 @@ public interface IMaybe<out T>
     
     IMaybe<TNext> Map<TNext>(Func<T, TNext> func);
     
-    IMaybe<TU> Bind<TU>(Func<T, IMaybe<TU>> func);
+    IMaybe<TNext> Bind<TNext>(Func<T, IMaybe<TNext>> func);
 }

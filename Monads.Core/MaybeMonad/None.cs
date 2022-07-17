@@ -8,6 +8,6 @@ public class None<T> : IMaybe<T>
     public IMaybe<TNext> Map<TNext>(Func<T, TNext> func)
         => new None<TNext>();
             
-    public IMaybe<TU> Bind<TU>(Func<T, IMaybe<TU>> func)
-        => new None<TU>();
+    public IMaybe<TNext> Bind<TNext>(Func<T, IMaybe<TNext>> func)
+        => new None<TNext>();
 }
