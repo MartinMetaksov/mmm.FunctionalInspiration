@@ -1,1 +1,1 @@
-# Trying out functional programming techniques in imperative languages
+# Trying out some functional programming techniques in C#
