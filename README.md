@@ -1,0 +1,1 @@
+# Trying out functional programming techniques in imperative languages
